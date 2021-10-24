@@ -1,0 +1,13 @@
+<launch>
+
+    <include file="$(find goat_launch_laptop)/launch/imu.launch"/>
+
+    <include file="$(find velodyne_pointcloud)/launch/VLP16_points.launch"/>
+
+    <!--include file="$(find goat_launch_laptop)/launch/move_base.launch"-->
+
+    <include file="$(find goat_launch_laptop)/launch/goat_odom.launch"/>
+
+
+ </launch>
+

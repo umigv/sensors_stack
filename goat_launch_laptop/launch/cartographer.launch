@@ -1,0 +1,14 @@
+<!-- run cartographer -->
+<launch>
+    <node name="cartographer_node" pkg="cartographer_ros" type="cartographer_node"
+          output="screen" required="true" clear_params="true"
+          args="-configuration_directory $(find goat_launch_laptop)/config -configuration_basename cartographer.lua">
+<!--
+          <remap from="imu" to="imu/data_jitter_filtered"/>
+-->
+	  <remap from="imu" to="imu/data"/>
+          <remap from="odom" to="odometry/filtered"/>
+          <remap from="points2" to="velodyne_points"/> 
+          <remap from="fix" to="gps/fix"/>
+    </node>
+</launch>
