@@ -3,7 +3,7 @@
 
 // exception types used in UMIGV nodes
 
-#include <phidgets_api/phidget.h> // phidgets::Phidget
+// #include <phidgets_api/phidget.h> // phidgets::Phidget
 
 #include <stdexcept> // std::runtime_error
 #include <string> // std::string
@@ -75,7 +75,8 @@ private:
     static inline std::shared_ptr<std::string>
     make_description(const int code) {
         return std::make_shared<std::string>(
-            phidgets::Phidget::getErrorDescription(code)
+            // phidgets::Phidget::getErrorDescription(code)
+            "Phidgets exception from exceptions.hpp (talk to Colin about why this is needed)"
         );
     }
 
