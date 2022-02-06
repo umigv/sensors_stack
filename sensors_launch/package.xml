@@ -1,11 +1,11 @@
 <package format="2">
-    <name>goat_launch</name>
+    <name>sensors_launch</name>
     <version>0.2.0</version>
-    <description>Launchfiles for the GOAT.</description>
-    <maintainer email="gregjm@umich.edu">Gregory Meyer</maintainer>
+    <description>Launchfiles for the sensors code stack.</description>
+    <maintainer email="colyoon@umich.edu">Colin Yoon (formely maintained by Gregory Meyer)</maintainer>
     <license>BSD 3-Clause License</license>
 
-    <url type="repository">https://github.com/umigv/goat_launch</url>
+    <url type="repository">https://github.com/umigv/sensors_stack</url>
     <author>Gregory Meyer</author>
 
     <buildtool_depend>catkin</buildtool_depend>

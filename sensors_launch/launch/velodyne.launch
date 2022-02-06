@@ -1,0 +1,4 @@
+<!-- Run velodyne, moved to sensors_launch file for simplicity -->
+<launch>
+	<include file="$(find velodyne_pointcloud)/launch/VLP16_points.launch"/>
+</launch>

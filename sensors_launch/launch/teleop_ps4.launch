@@ -3,7 +3,7 @@
     <arg name="serial_port" default="/dev/ttyACM0"/>
     <arg name="joy_device" default="/dev/input/js0"/>
 
-    <rosparam command="load" file="$(find goat_launch)/params/teleop_ps4.yaml"/>
+    <rosparam command="load" file="$(find sensors_launch)/params/teleop_ps4.yaml"/>
 
     <node name="serial_node" pkg="rosserial_python" type="serial_node.py" required="true" output="screen">
         <param name="port" value="$(arg serial_port)"/>
