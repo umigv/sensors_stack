@@ -1,0 +1,7 @@
+<launch>
+	<rosparam command="load" file="$(find sensors_launch)/params/encoders.yaml"/>
+
+    <node name="encoder_odometry_node" pkg="encoder_odometry"
+    	type="encoder_odometry_node" output="screen" clear_params="true"
+    	required="true"/>
+</launch>
