@@ -2,7 +2,7 @@
 
 <launch>
     <include file="$(find sensors_launch)/launch/state.launch"/>
-    <!-- <include file="$(find sensors_launch)/launch/localization_imu_encoders.launch"/> -->
+    <include file="$(find sensors_launch)/launch/encoders.launch"/>
     <include file="$(find sensors_launch)/launch/cartographer.launch"/>
     <!-- <include file="$(find sensors_launch)/launch/teleop_ps4.launch"/>
     <include file="$(find sensors_launch)/launch/move_base.launch"/>
