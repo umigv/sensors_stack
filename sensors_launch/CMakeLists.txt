@@ -8,6 +8,9 @@ catkin_package()
 
 include_directories(${catkin_INCLUDE_DIRS})
 
+install(PROGRAMS scripts/run_velodyne.sh 
+        DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})
+
 install(DIRECTORY launch/
         DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/launch)
 

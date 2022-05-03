@@ -9,5 +9,3 @@
 
 sudo ifconfig eno1 192.168.191.2
 sudo route add 192.168.191.254 eno1
-
-roslaunch sensors_launch velodyne.launch
