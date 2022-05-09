@@ -1,0 +1,10 @@
+<launch>
+
+  <node name="garmin_gps" pkg="garmin_gps" type="garmin_gps.py" output="screen">
+    <param name="pub_topic" value="/gps/fix"/>
+    <param name="frame_id" value="gps"/>
+    <param name="pub_rate" value="1.0"/>
+    <param name="port" value="/dev/garmin_gps"/>
+  </node>
+
+</launch>
