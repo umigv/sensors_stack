@@ -1,4 +1,4 @@
-phidgets_imu_node:
+PhidgetsSpatialNodelet:
     frame_id: imu_ned
     period: 8.0
     angular_velocity_stdev: 0.0102974425867665445
