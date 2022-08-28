@@ -17,14 +17,14 @@ Checklist:
 In separate terminals, run:
 ```
 $ roslaunch sensors_launch embedded.launch
-$ roslaunch sensors_launch teleop_ps4.launch
+$ roslaunch sensors_launch velocity.launch
 ```
 *Note:*
 - DO NOT start embedded.launch while the bot Odrives are calibrating. The bot may automatically start the calibration when powering the arduino; wait for it to complete.
-- embedded.launch may throw some errors before connecting - this is due to the Odrive calibration process (just wait).
+- embedded.launch may throw some sync errors before connecting - this is due to the Odrive calibration process (just wait).
 - Controller keymaps
 	- Left stick = forward/reverse, right stick = left/right
-	- Right bumper = trigger (must hold this down while driving)
+	- Right bumper = movement enable (must hold this down while driving)
 	- X button = teleop/autonomous mode toggle (make sure you're in teleop mode, signified by blue solid light)
 
 ## Full sensor teleop
