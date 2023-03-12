@@ -11,3 +11,6 @@
 [submodule "garmin_gps"]
 	path = garmin_gps
 	url = https://github.com/umigv/garmin_gps.git
+[submodule "imu/imu_driver"]
+	path = imu/imu_driver
+	url = https://github.com/umigv/bno055_imu_driver.git
