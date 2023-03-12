@@ -4,9 +4,6 @@
 [submodule "turtlebot3"]
 	path = turtlebot3
 	url = https://github.com/ROBOTIS-GIT/turtlebot3.git
-[submodule "imu/imu_driver"]
-	path = imu/imu_driver
-	url = https://github.com/umigv/bno055_imu_driver.git
 [submodule "cartographer/cartographer"]
 	path = cartographer/cartographer
 	url = https://github.com/cartographer-project/cartographer.git
