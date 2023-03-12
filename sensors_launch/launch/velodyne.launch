@@ -1,0 +1,6 @@
+<!-- Run velodyne, moved to sensors_launch file for simplicity -->
+<launch>
+    <node name="velodyne_config" pkg="sensors_scripts" type="config_velodyne_connection.sh" launch-prefix="sudo" />
+    <remap from="/velodyne_points" to="/points2" />
+    <include file="$(find velodyne_pointcloud)/launch/VLP16_points.launch" />
+</launch>

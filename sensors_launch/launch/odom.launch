@@ -1,0 +1,13 @@
+<launch>
+    <rosparam command="load" file="$(find sensors_launch)/params/localization.yaml" />
+    <rosparam command="load" file="$(find sensors_launch)/params/localization_ie.yaml" />
+    <rosparam command="load" file="$(find sensors_launch)/params/encoders.yaml" />
+
+    <!--compute twist from encoder velocities and positions-->
+    <!-- <node name="encoder_odometry_node" pkg="encoder_odometry" type="encoder_odometry_node" output="screen" clear_params="true" required="true" /> -->
+
+    <!-- unscented kalman filter (ukf) fuses imu and encoders for odometry -->
+    <node name="ekf_localization_node" pkg="robot_localization" type="ekf_localization_node" output="screen" required="true" clear_params="true">
+        <!--<param name="odom0" value="/initialpose"/>-->
+    </node>
+</launch>

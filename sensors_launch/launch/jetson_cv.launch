@@ -1,0 +1,6 @@
+<launch>
+    <machine name="jetson" address="10.10.10.2" env-loader="/opt/ros/melodic/env.sh"/>
+    <include file="$(find cv_full)/launch/cv.launch" machine="jetson"/>
+
+
+</launch>

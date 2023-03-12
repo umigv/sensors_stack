@@ -1,0 +1,13 @@
+[submodule "velodyne"]
+	path = velodyne
+	url = https://github.com/ros-drivers/velodyne.git
+[submodule "turtlebot3"]
+	path = turtlebot3
+	url = https://github.com/ROBOTIS-GIT/turtlebot3.git
+[submodule "controls_stack"]
+	path = controls_stack
+	url = https://github.com/umigv/controls_stack.git
+	branch = gps_listener
+[submodule "garmin_gps"]
+	path = garmin_gps
+	url = https://github.com/umigv/garmin_gps.git

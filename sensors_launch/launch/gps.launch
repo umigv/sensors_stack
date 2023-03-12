@@ -1,0 +1,4 @@
+<launch>
+    <node name="garmin_setup" pkg="sensors_scripts" type="garmin_setup.sh" launch-prefix="sudo" />
+    <include file="$(find garmin_gps)/launch/gps.launch"/>
+</launch>

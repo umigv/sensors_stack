@@ -1,0 +1,14 @@
+<package format="2">
+    <name>sensors_scripts</name>
+    <version>0.2.0</version>
+    <description>useful scripts</description>
+    <maintainer email="colyoon@umich.edu">Colin Yoon</maintainer>
+    <license>BSD 3-Clause License</license>
+
+    <url type="repository">https://github.com/umigv/sensors_stack</url>
+    <author>Colin Yoon</author>
+
+    <buildtool_depend>catkin</buildtool_depend>
+
+    <exec_depend>sensors_launch</exec_depend>
+</package>

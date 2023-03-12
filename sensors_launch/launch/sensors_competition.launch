@@ -1,0 +1,15 @@
+<launch>
+
+
+    <!-- <include file="$(find sensors_launch)/launch/embedded.launch"/> -->
+
+    <include file="$(find sensors_launch)/launch/state.launch"/>
+    <include file="$(find sensors_launch)/launch/imu.launch"/>
+    <include file="$(find sensors_launch)/launch/odom.launch"/>
+    <include file="$(find sensors_launch)/launch/velodyne.launch"/>
+    <include file="$(find sensors_launch)/launch/velocity.launch"/>
+
+    <include file="$(find sensors_launch)/launch/cartographer.launch"/>
+
+
+</launch>
